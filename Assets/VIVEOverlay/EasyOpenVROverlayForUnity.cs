@@ -281,7 +281,7 @@ public class EasyOpenVROverlayForUnity : MonoBehaviour
                 }
                 catch (UnassignedReferenceException e)
                 {
-                    Debug.LogError(Tag + "RenderTextureがセットされていません");
+                    Debug.LogError(Tag + "RenderTextureがセットされていません"　+　e);
                     ApplicationQuit();
                     return;
                 }
