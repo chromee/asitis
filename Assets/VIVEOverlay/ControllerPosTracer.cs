@@ -4,7 +4,8 @@ using UnityEngine;
 using EasyLazyLibrary;
 
 
-public class ControllerPosTracer : MonoBehaviour {
+public class ControllerPosTracer : MonoBehaviour
+{
 
     EasyOpenVRUtil util = new EasyOpenVRUtil(); //姿勢取得ライブラリ
     public enum LR
@@ -14,19 +15,21 @@ public class ControllerPosTracer : MonoBehaviour {
 
     public LR controller;
 
-    
+
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         //姿勢取得ライブラリを初期化
         if (!util.IsReady())
         {
             util.Init();
         }
-        
+
     }
-	
-	// Update is called once per frame
-	void FixedUpdate () {
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
         UpdatePos();
     }
 
@@ -47,7 +50,10 @@ public class ControllerPosTracer : MonoBehaviour {
         {
             pos = util.GetRightControllerTransform();
         }
-        this.transform.position = pos.position;
-        this.transform.rotation = pos.rotation;
+        if (pos != null)
+        {
+            this.transform.position = pos.position;
+            this.transform.rotation = pos.rotation;
+        }
     }
 }

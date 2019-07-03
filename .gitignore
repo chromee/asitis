@@ -8,6 +8,8 @@
 /Assets/SteamVR
 /Assets/SteamVR.meta
 /Assets/EasyOpenVR*
+
+/Assets/Libraries*
 /Assets/PositionManagerScript*
 /.vs
 

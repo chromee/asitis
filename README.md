@@ -1,4 +1,4 @@
-# regainerOverlay
+﻿# regainerOverlay
 VRオーバーレイバーチャルmidiコントローラーを開発したい
 
 # 初期設定
@@ -11,3 +11,6 @@ VRオーバーレイバーチャルmidiコントローラーを開発したい
 2. EasyOpenVROverlayForUnity
 3. EasyOpenVRUtil
 4. PositionManagerScript.cs
+
+dependencies
+unity-midi-bridge
