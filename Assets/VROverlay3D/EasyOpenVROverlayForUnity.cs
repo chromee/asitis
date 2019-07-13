@@ -16,7 +16,7 @@ using Valve.VR; //Steam VR
 
 public class EasyOpenVROverlayForUnity : MonoBehaviour
 {
-    
+
     //エラーフラグ
     public bool error = true; //初期化失敗
     //イベントに関するログを表示するか
@@ -46,6 +46,12 @@ public class EasyOpenVROverlayForUnity : MonoBehaviour
     //着座カメラのリセット(リセット後自動でfalseに戻ります)
     public bool ResetSeatedCamera = false;
 
+    //--------------------------------------------------------------------------
+
+    //オーバーレイ画面の奥行き
+    [Header("Device Info")]
+    [SerializeField]
+    private float overlayScreenDepth = 0.1f;
     //--------------------------------------------------------------------------
 
     [Header("Device Info")]
@@ -89,7 +95,6 @@ public class EasyOpenVROverlayForUnity : MonoBehaviour
 
     //オーバーレイの大きさ設定(幅のみ。高さはテクスチャの比から自動計算される)
     private float width = 0.382f;
-
 
     //--------------------------------------------------------------------------
 
@@ -218,7 +223,7 @@ public class EasyOpenVROverlayForUnity : MonoBehaviour
 
     private void Update()
     {
-        
+
 
 #pragma warning disable 0219
         string Tag = "[" + this.GetType().Name + ":" + System.Reflection.MethodBase.GetCurrentMethod(); //クラス名とメソッド名を自動取得
@@ -242,7 +247,7 @@ public class EasyOpenVROverlayForUnity : MonoBehaviour
         overlay.SetOverlayFlag(overlayHandle, VROverlayFlags.SideBySide_Parallel, true);
         overlay.ShowOverlay(overlayHandle);
 
-        
+
         //オーバーレイが表示されている時
         if (overlay.IsOverlayVisible(overlayHandle))
         {
@@ -256,8 +261,8 @@ public class EasyOpenVROverlayForUnity : MonoBehaviour
                 //ここでは回転なし、平行移動ありのHUD的な状態にしている。
                 var wx = -0f;
                 var wy = -0f;
-                var wz = -0.1f;
-                
+                var wz = -overlayScreenDepth;
+
                 p.m0 = 1; p.m1 = 0; p.m2 = 0; p.m3 = wx;
                 p.m4 = 0; p.m5 = 1; p.m6 = 0; p.m7 = wy;
                 p.m8 = 0; p.m9 = 0; p.m10 = 1; p.m11 = wz;
@@ -281,7 +286,7 @@ public class EasyOpenVROverlayForUnity : MonoBehaviour
                 }
                 catch (UnassignedReferenceException e)
                 {
-                    Debug.LogError(Tag + "RenderTextureがセットされていません"　+　e);
+                    Debug.LogError(Tag + "RenderTextureがセットされていません");
                     ApplicationQuit();
                     return;
                 }
@@ -299,12 +304,12 @@ public class EasyOpenVROverlayForUnity : MonoBehaviour
 
         }
 
- 
-        
+
+
 
     }
 
-  
+
     //終了イベントをキャッチした時に戻す
     private bool ProcessEvent()
     {
@@ -339,8 +344,8 @@ public class EasyOpenVROverlayForUnity : MonoBehaviour
     }
 
 
-   
-    
+
+
 
 
 }

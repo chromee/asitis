@@ -48,7 +48,7 @@ namespace EasyLazyLibrary
             //デバッグ用
             public override string ToString()
             {
-                return "deviceid: " + deviceid + " position:" + position.ToString() + " rotation:" + rotation.ToString() + " velocity:" + velocity.ToString() + " angularVelocity:" + angularVelocity.ToString();
+                return "deviceid: " + deviceid + " position:" + position.ToString() + " rotation:" + rotation.ToString() + " velocity:"+ velocity.ToString() + " angularVelocity:" + angularVelocity.ToString();
             }
         }
 
