@@ -618,6 +618,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1779406426843428, guid: a6060e8e38e8c894488253a262b502a0, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893228996972444, guid: a6060e8e38e8c894488253a262b502a0, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6060e8e38e8c894488253a262b502a0, type: 2}
   m_IsPrefabParent: 0
@@ -1241,7 +1249,7 @@ MonoBehaviour:
   velocity: 127
   accele: {x: 0, y: 0, z: 0}
   acceleAvg: 0
-  controller: 0
+  controller: 1
 --- !u!1 &1986411429
 GameObject:
   m_ObjectHideFlags: 0
