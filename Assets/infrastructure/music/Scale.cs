@@ -1,5 +1,4 @@
-﻿using MusicTheory;
-//Aメジャーの2ndNoteの3オクターブ目！って言われたら23(B0) + 12 * 2 = 47を返すクラス
+﻿//Aメジャーの2ndNoteの3オクターブ目！って言われたら23(B0) + 12 * 2 = 47を返すクラス
 interface Scale
 {
     int note(int degree, int octave);
