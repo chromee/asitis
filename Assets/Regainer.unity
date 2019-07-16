@@ -113,90 +113,57 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &39700499
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 39700500}
-  - component: {fileID: 39700503}
-  - component: {fileID: 39700502}
-  - component: {fileID: 39700501}
-  m_Layer: 0
-  m_Name: ChordPad (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &39700500
+--- !u!4 &39700500 stripped
 Transform:
+  m_PrefabParentObject: {fileID: 4862708141378944, guid: b832047262809184b92a67e329ecdca4,
+    type: 2}
+  m_PrefabInternal: {fileID: 60673141}
+--- !u!1001 &60673141
+Prefab:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 39700499}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.45, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.099999994, z: 0.5}
-  m_Children: []
-  m_Father: {fileID: 1986411430}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &39700501
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 39700499}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 1
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!65 &39700502
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 39700499}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &39700503
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 39700499}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Modification:
+    m_TransformParent: {fileID: 1986411430}
+    m_Modifications:
+    - target: {fileID: 4862708141378944, guid: b832047262809184b92a67e329ecdca4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862708141378944, guid: b832047262809184b92a67e329ecdca4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862708141378944, guid: b832047262809184b92a67e329ecdca4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862708141378944, guid: b832047262809184b92a67e329ecdca4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862708141378944, guid: b832047262809184b92a67e329ecdca4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862708141378944, guid: b832047262809184b92a67e329ecdca4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862708141378944, guid: b832047262809184b92a67e329ecdca4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862708141378944, guid: b832047262809184b92a67e329ecdca4, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288646992465368, guid: b832047262809184b92a67e329ecdca4, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b832047262809184b92a67e329ecdca4, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &168134390
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,12 +260,12 @@ GameObject:
   - component: {fileID: 191653823}
   - component: {fileID: 191653822}
   m_Layer: 0
-  m_Name: ChordPad (6)
+  m_Name: ChordSelecter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &191653821
 Transform:
   m_ObjectHideFlags: 0
@@ -407,12 +374,12 @@ GameObject:
   - component: {fileID: 311815643}
   - component: {fileID: 311815642}
   m_Layer: 0
-  m_Name: ChordPad
+  m_Name: ChordSelecter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &311815642
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -629,6 +596,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6060e8e38e8c894488253a262b502a0, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &762567816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 762567818}
+  - component: {fileID: 762567817}
+  m_Layer: 0
+  m_Name: ChordPadManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &762567817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 762567816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 812dc119e9ab54349999597613218e75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chordSelecterPrefab: {fileID: 1288646992465368, guid: b832047262809184b92a67e329ecdca4,
+    type: 2}
+--- !u!4 &762567818
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 762567816}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1072637931
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,12 +805,12 @@ GameObject:
   - component: {fileID: 1793334886}
   - component: {fileID: 1793334885}
   m_Layer: 0
-  m_Name: ChordPad (2)
+  m_Name: ChordSelecter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1793334884
 Transform:
   m_ObjectHideFlags: 0
@@ -880,12 +889,12 @@ GameObject:
   - component: {fileID: 1812943724}
   - component: {fileID: 1812943723}
   m_Layer: 0
-  m_Name: ChordPad (5)
+  m_Name: ChordSelecter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1812943722
 Transform:
   m_ObjectHideFlags: 0
@@ -964,12 +973,12 @@ GameObject:
   - component: {fileID: 1823150159}
   - component: {fileID: 1823150158}
   m_Layer: 0
-  m_Name: ChordPad (4)
+  m_Name: ChordSelecter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1823150157
 Transform:
   m_ObjectHideFlags: 0
@@ -1362,12 +1371,12 @@ GameObject:
   - component: {fileID: 2095483984}
   - component: {fileID: 2095483983}
   m_Layer: 0
-  m_Name: ChordPad (1)
+  m_Name: ChordSelecter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2095483982
 Transform:
   m_ObjectHideFlags: 0

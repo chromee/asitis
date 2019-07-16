@@ -76,7 +76,7 @@ public class ChordShooter : MonoBehaviour
             //トリガー押されてる状態から離されるとコードを放つ
             if (button != ViveConstants.TRIGGER)
             {
-                ChordPadManager.instance.Ring(nowPos.y - 0.5f);
+                //ChordPadManager.instance.Ring(nowPos.y - 0.5f);
                 Debug.Log(nowPos.y - 0.5f);
                 isTriggerPressed = false;
             }
@@ -86,7 +86,7 @@ public class ChordShooter : MonoBehaviour
             //トリガーが離されてる状態から押されるとコードを止める
             if (button == ViveConstants.TRIGGER)
             {
-                ChordPadManager.instance.Mute();
+                //ChordPadManager.instance.Mute();
                 isTriggerPressed = true;
             }
         }
