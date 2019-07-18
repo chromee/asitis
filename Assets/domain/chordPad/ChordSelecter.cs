@@ -11,28 +11,29 @@ using UnityEngine;
 public class ChordSelecter : MonoBehaviour
 {
     public Chord chord;
-    private ChordPadManager creator;
-    public void Create(Chord chord, ChordPadManager creator)
+
+    public void Create(Chord chord)
     {
         this.chord = chord;
-        this.creator = creator;
         Debug.Log(chord.root);
     }
 
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider collider)
     {
-        creator.setChord(chord);
-        Debug.Log("trigger haitta" + creator);
+        var manager = collider.GetComponent<ChordPadManager>();
+        if (manager == null) return;
+
+        manager.setChord(chord);
+        Debug.Log("trigger haitta" + manager);
     }
+
     // Use this for initialization
     void Start()
     {
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
     }
 }
