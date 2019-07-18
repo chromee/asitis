@@ -17,18 +17,16 @@ public class ChordPadManager : MonoBehaviour
 
     void Start()
     {
-        //TODO: ここ関数にする
-        GameObject chordSelecter = Instantiate(chordSelecterPrefab, new Vector3(0f, 0f, 0f), Quaternion.identity);
-        ChordSelecter cs1 = chordSelecter.GetComponent<ChordSelecter>();
-        cs1.Create(chord: new Chord(PitchName.C, Type.maj), creator: this);
+        var pitchNames = new[] {(PitchName.C, 0f), (PitchName.D, 1f), (PitchName.E, 2f)};
 
-        GameObject chordSelecter2 = Instantiate(chordSelecterPrefab, new Vector3(1f, 0f, 0f), Quaternion.identity);
-        ChordSelecter cs2 = chordSelecter2.GetComponent<ChordSelecter>();
-        cs2.Create(chord: new Chord(PitchName.D, Type.min), creator: this);
-
-        GameObject chordSelecter3 = Instantiate(chordSelecterPrefab, new Vector3(2f, 0f, 0f), Quaternion.identity);
-        ChordSelecter cs3 = chordSelecter3.GetComponent<ChordSelecter>();
-        cs3.Create(chord: new Chord(PitchName.E, Type.min), creator: this);
+        foreach (var pitchName in pitchNames)
+        {
+            //TODO: ここ関数にする
+            GameObject chordSelecter = Instantiate(chordSelecterPrefab, new Vector3(pitchName.Item2, 0f, 0f),
+                Quaternion.identity);
+            ChordSelecter cs1 = chordSelecter.GetComponent<ChordSelecter>();
+            cs1.Create(chord: new Chord(pitchName.Item1, Type.maj));
+        }
     }
 
     public void setChord(Chord receivedChord)
