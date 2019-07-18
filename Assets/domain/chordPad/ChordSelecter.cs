@@ -17,23 +17,4 @@ public class ChordSelecter : MonoBehaviour
         this.chord = chord;
         Debug.Log(chord.root);
     }
-
-    void OnTriggerEnter(Collider collider)
-    {
-        var manager = collider.GetComponent<ChordPadManager>();
-        if (manager == null) return;
-
-        manager.setChord(chord);
-        Debug.Log("trigger haitta" + manager);
-    }
-
-    // Use this for initialization
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
 }
